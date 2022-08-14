@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace DotnetFrameworkTest.Controllers
@@ -11,6 +8,8 @@ namespace DotnetFrameworkTest.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
+
+            throw new Exception("Hello World");
 
             return View();
         }
